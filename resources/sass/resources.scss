@@ -1,0 +1,43 @@
+
+#accordion .panel,
+#accordion .panel-default {
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid #c5c5c5;
+  background: #f6f6f6;
+  color: #454545;
+}
+
+#accordion .panel-body {
+  background-color: #fff;
+}
+
+#accordion .ui-accordion-content {
+  display: block;
+}
+
+#accordion .ui-accordion-header-icon {
+  display: none!important;
+}
+
+#accordion span.glyphicon {
+  background: transparent;
+  background-color: transparent;
+}
+
+#accordion h4 {
+  font-weight: bold;
+  font-size: 18px;
+  padding: 15px 30px;
+}
+
+#accordion h1,
+#accordion h2,
+#accordion h3,
+#accordion h4,
+#accordion h5 {
+  line-height: 1.6em;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #000;
+  text-transform: capitalize;
+}
