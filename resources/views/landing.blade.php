@@ -46,7 +46,7 @@
                                     </button>
                                     <!-- Logo -->
                                     <a class="navbar-brand" href="index.html">
-                                    <img class="site_logo" alt="Site Logo" src="assests/img/Charity.png" />
+                                    <img class="site_logo" alt="Site Logo" src="assets/img/Charity.png" />
                                     </a>
                                 </div>
                                 <!-- Navbar Collapse -->
@@ -120,8 +120,8 @@
         <div id="slider" class="owl-carousel owlCarousel">
             <div class="item">
                 <figure>
-                    <img src="assests/img/slider/Rectangle-41.jpg" alt="" class="hidden-xs hidden-sm">
-                    <img src="assests/img/slider/Rectangle-41.jpg" alt="" class="hidden-lg hidden-md">
+                    <img src="assets/img/slider/Rectangle-41.jpg" alt="" class="hidden-xs hidden-sm">
+                    <img src="assets/img/slider/Rectangle-41.jpg" alt="" class="hidden-lg hidden-md">
                 </figure>
                 <div class="slider-text">
                     <div class="container">
@@ -141,8 +141,8 @@
             </div>
             {{-- <div class="item">
                 <figure>
-                    <img src="assests/img/slider/bnr04.jpg" alt="" class="hidden-xs hidden-sm">
-                    <img src="assests/img/slider/bnr04.jpg" alt="" class="hidden-lg hidden-md">
+                    <img src="assets/img/slider/bnr04.jpg" alt="" class="hidden-xs hidden-sm">
+                    <img src="assets/img/slider/bnr04.jpg" alt="" class="hidden-lg hidden-md">
                 </figure>
                 <div class="slider-text">
                     <div class="container">
@@ -162,8 +162,8 @@
             </div>
             <div class="item">
                 <figure>
-                    <img src="assests/img/slider/bnr02.jpg" alt="" class="hidden-xs hidden-sm">
-                    <img src="assests/img/slider/bnr02.jpg" alt="" class="hidden-lg hidden-md">
+                    <img src="assets/img/slider/bnr02.jpg" alt="" class="hidden-xs hidden-sm">
+                    <img src="assets/img/slider/bnr02.jpg" alt="" class="hidden-lg hidden-md">
                 </figure>
                 <div class="slider-text">
                     <div class="container">
@@ -329,7 +329,7 @@
                 <div class="row">
                     <div class="col-md-12 hidden-lg hidden-md">
                         <figure>
-                            <img src="assests/img/about-us/Layer-66.jpg" alt="">
+                            <img src="assets/img/about-us/Layer-66.jpg" alt="">
                         </figure>
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12">
@@ -345,7 +345,7 @@
                     <div class="col-md-4 hidden-xs hidden-sm">
                         <div class="about-us">
                             <figure></figure>
-                            <img src="assests/img/about-us/Layer-66.jpg" alt="">
+                            <img src="assets/img/about-us/Layer-66.jpg" alt="">
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12">
@@ -388,10 +388,10 @@
                     <div class="col-md-4 col-sm-4 col-xs-12">
                         <div class="row">
                             <figure class="gallery-image">
-                                <img src="assests/img/gallery/Layer-67.jpg" alt="">
+                                <img src="assets/img/gallery/Layer-67.jpg" alt="">
                                 <figcaption>
                                     <div class="gallery-hover">
-                                        <a href="assests/img/gallery/Layer-67.jpg" class="fancybox" data-fancybox-group="group"><i class="fa fa-picture-o" aria-hidden="true"></i></a>
+                                        <a href="assets/img/gallery/Layer-67.jpg" class="fancybox" data-fancybox-group="group"><i class="fa fa-picture-o" aria-hidden="true"></i></a>
                                     </div>
                                 </figcaption>
                             </figure>
@@ -400,20 +400,20 @@
                     <div class="col-md-2 col-sm-2 col-xs-12">
                         <div class="row ">
                             <figure class="gallery-image">
-                                <img src="assests/img/gallery/Layer-45.jpg " alt=" ">
+                                <img src="assets/img/gallery/Layer-45.jpg " alt=" ">
                                 <figcaption>
                                     <div  class="gallery-hover">
-                                        <a href="assests/img/gallery/Layer-45.jpg" class="fancybox" data-fancybox-group="group"><i class="fa fa-picture-o" aria-hidden="true"></i></a>
+                                        <a href="assets/img/gallery/Layer-45.jpg" class="fancybox" data-fancybox-group="group"><i class="fa fa-picture-o" aria-hidden="true"></i></a>
                                     </div>
                                 </figcaption>
                             </figure>
                         </div>
                         <div class="row">
                             <figure class="gallery-image">
-                                <img src="assests/img/gallery/Layer-46.jpg" alt="">
+                                <img src="assets/img/gallery/Layer-46.jpg" alt="">
                                 <figcaption>
                                     <div class="gallery-hover">
-                                        <a href="assests/img/gallery/Layer-46.jpg" class="fancybox" data-fancybox-group="group"><i class="fa fa-picture-o" aria-hidden="true"></i></a>
+                                        <a href="assets/img/gallery/Layer-46.jpg" class="fancybox" data-fancybox-group="group"><i class="fa fa-picture-o" aria-hidden="true"></i></a>
                                     </div>
                                 </figcaption>
                             </figure>
@@ -422,10 +422,10 @@
                     <div class="col-md-2 col-sm-2 col-xs-12">
                         <div class="row ">
                             <figure class="gallery-image">
-                                <img src="assests/img/gallery/Layer-48.jpg " alt=" ">
+                                <img src="assets/img/gallery/Layer-48.jpg " alt=" ">
                                 <figcaption>
                                     <div class="gallery-hover">
-                                        <a href="assests/img/gallery/Layer-48.jpg" class="fancybox" data-fancybox-group="group"><i class="fa fa-picture-o" aria-hidden="true"></i></a>
+                                        <a href="assets/img/gallery/Layer-48.jpg" class="fancybox" data-fancybox-group="group"><i class="fa fa-picture-o" aria-hidden="true"></i></a>
                                     </div>
                                 </figcaption>
                             </figure>
@@ -434,10 +434,10 @@
                     <div class="col-md-4 col-sm-4 col-xs-12">
                         <div class="row">
                             <figure class="gallery-image">
-                                <img src="assests/img/gallery/Layer-50.jpg" alt="">
+                                <img src="assets/img/gallery/Layer-50.jpg" alt="">
                                 <figcaption>
                                     <div class="gallery-hover">
-                                        <a href="assests/img/gallery/Layer-50.jpg" class="fancybox" data-fancybox-group="group"><i class="fa fa-picture-o" aria-hidden="true"></i></a>
+                                        <a href="assets/img/gallery/Layer-50.jpg" class="fancybox" data-fancybox-group="group"><i class="fa fa-picture-o" aria-hidden="true"></i></a>
                                     </div>
                                 </figcaption>
                             </figure>
@@ -446,10 +446,10 @@
                     <div class="col-md-4 col-sm-4 col-xs-12">
                         <div class="row">
                             <figure class="gallery-image">
-                                <img src="assests/img/gallery/Layer-51.jpg" alt=" ">
+                                <img src="assets/img/gallery/Layer-51.jpg" alt=" ">
                                 <figcaption>
                                     <div  class="gallery-hover">
-                                        <a href="assests/img/gallery/Layer-51.jpg" class="fancybox" data-fancybox-group="group"><i class="fa fa-picture-o" aria-hidden="true"></i></a>
+                                        <a href="assets/img/gallery/Layer-51.jpg" class="fancybox" data-fancybox-group="group"><i class="fa fa-picture-o" aria-hidden="true"></i></a>
                                     </div>
                                 </figcaption>
                             </figure>
@@ -484,7 +484,7 @@
                         <div class="col-md-4 col-sm-4 col-xs-12 marB30">
                             <div class="blog">
                                 <figure class="blog-image">
-                                    <img src="assests/img/blog/Layer-63.jpg" alt="">
+                                    <img src="assets/img/blog/Layer-63.jpg" alt="">
                                 </figure>
                                 <div class="blog-detail">
                                     <h4><b><a href="blog-single-sidebar.html">Better Life For Children</a></b></h4>
@@ -509,7 +509,7 @@
                         <div class="col-md-4 col-sm-4 col-xs-12 marB30">
                             <div class="blog">
                                 <figure class="blog-image">
-                                    <img src="assests/img/blog/Layer-54.jpg" alt="">
+                                    <img src="assets/img/blog/Layer-54.jpg" alt="">
                                 </figure>
                                 <div class="blog-detail">
                                     <h4><b><a href="blog-single-sidebar.html">Better Life For Children</a></b></h4>
@@ -534,7 +534,7 @@
                         <div class="col-md-4 col-sm-4 col-xs-12 marB30">
                             <div class="blog">
                                 <figure class="blog-image">
-                                    <img src="assests/img/blog/Layer-64.jpg" alt="">
+                                    <img src="assets/img/blog/Layer-64.jpg" alt="">
                                 </figure>
                                 <div class="blog-detail">
                                     <h4><b><a href="blog-single-sidebar.html">Better Life For Children</a></b></h4>
@@ -565,7 +565,7 @@
     <!-- //***Main-footer Start***// -->
     <footer class="main-footer">
         <div class="special-style special-style-dark col-md-12">
-            <div class="bg-image parallax-style" style="background-image:url('assests/img/background/Layer-62.jpg');"></div>
+            <div class="bg-image parallax-style" style="background-image:url('assets/img/background/Layer-62.jpg');"></div>
         </div>
         <a href="#" class="footer-icon"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
         <div class="upper-footer box padT100 padB70">
@@ -573,7 +573,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="main-footer-logo text-center marB80">
-                            <a href="index.html"><img src="assests/img/footer-logo.png" alt=""></a>
+                            <a href="index.html"><img src="assets/img/footer-logo.png" alt=""></a>
                         </div>
                     </div>
                 </div>
@@ -671,15 +671,15 @@
     </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="assests/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="assests/js/bootstrap.min.js"></script>
-    {{-- <script src="assests/plugins/owl-carousel/js/owl.carousel.min.js"></script> --}}
-    {{-- <script src="assests/plugins/megamenu/js/hover-dropdown-menu.js"></script> --}}
-    {{-- <script src="assests/plugins/megamenu/js/jquery.hover-dropdown-menu-addon.js"></script> --}}
-    <script src="assests/plugins/fancyBox/js/jquery.fancybox.pack.js"></script>
-    <script src="assests/plugins/fancyBox/js/jquery.fancybox-media.js"></script>
-    {{-- <script src="assests/plugins/appear/js/jquery.appear.js"></script> --}}
-    {{-- <script src="assests/plugins/switcher/js/switcher.js"></script> --}}
-    <script src="assests/js/main.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    {{-- <script src="assets/plugins/owl-carousel/js/owl.carousel.min.js"></script> --}}
+    {{-- <script src="assets/plugins/megamenu/js/hover-dropdown-menu.js"></script> --}}
+    {{-- <script src="assets/plugins/megamenu/js/jquery.hover-dropdown-menu-addon.js"></script> --}}
+    <script src="assets/plugins/fancyBox/js/jquery.fancybox.pack.js"></script>
+    <script src="assets/plugins/fancyBox/js/jquery.fancybox-media.js"></script>
+    {{-- <script src="assets/plugins/appear/js/jquery.appear.js"></script> --}}
+    {{-- <script src="assets/plugins/switcher/js/switcher.js"></script> --}}
+    <script src="assets/js/main.js"></script>
 @endsection

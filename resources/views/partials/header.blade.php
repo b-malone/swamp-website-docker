@@ -49,7 +49,7 @@
                                 <!-- Logo -->
                                 <a class="navbar-brand" href="{{ url('/') }}">
                                   <img class="site_logo" alt="Site Logo" src="img/swamp-logo.png" style="width: 150px;" />
-                                  {{-- <img class="site_logo" alt="Site Logo" src="assests/img/Charity.png" /> --}}
+                                  {{-- <img class="site_logo" alt="Site Logo" src="assets/img/Charity.png" /> --}}
                                 </a>
                             </div>
                             <!-- Navbar Collapse -->

@@ -1,8 +1,8 @@
 <div class="col-md-4 col-sm-4 col-xs-12 marB30">
     <div class="blog">
         <figure class="blog-image">
-            {{-- <img src="assests/img/blog/Layer-63.jpg" alt=""> --}}
-            <img src="assests/img/blog/Layer-63.jpg" alt="">
+            {{-- <img src="assets/img/blog/Layer-63.jpg" alt=""> --}}
+            <img src="assets/img/blog/Layer-63.jpg" alt="">
         </figure>
         <div class="blog-detail">
             <h4><b><a href="blog-single-sidebar.html">Better Life For Children</a></b></h4>

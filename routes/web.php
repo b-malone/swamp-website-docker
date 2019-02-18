@@ -11,13 +11,7 @@
 |
 */
 
-// Route::get('/', function () {
-//     return view('landing');
-// });
-
-// Route::get('/', function() {
-//   return View::make('pages.main');
-// });
+/* Pages */
 Route::get('/', [
     'as' => 'home',
     'uses' => 'PagesController@index'
@@ -48,7 +42,7 @@ Route::get('/people', [
     'uses' => 'PagesController@people'
 ]);
 
-// Route::get('/events', [
-//     'as' => 'calendar',
-//     'uses' => 'PagesController@calendar'
-// ]);
+/* Emails */
+// Route::post('/send', 'EmailController@send');
+Route::post('/email/message', 'EmailController@sendMessage');
+Route::post('/email/volunteer', 'EmailController@sendVolunteerRequest');

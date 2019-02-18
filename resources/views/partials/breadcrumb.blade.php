@@ -1,6 +1,6 @@
 <div class="breadcrumb-box ">
   <div class="special-style special-style-dark col-md-12">
-    <div class="bg-image" style="background-image:url('assests/img/background/Layer-64-copy.jpg');"></div>
+    <div class="bg-image" style="background-image:url('assets/img/background/Layer-64-copy.jpg');"></div>
   </div>
   <div class="breadcrumb-text">
     <div class="container">

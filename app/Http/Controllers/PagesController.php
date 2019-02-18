@@ -10,7 +10,10 @@ class PagesController extends Controller
 {
 
   public function index() {
-    return \View::make('pages.landing');
+    return \View::make('pages.landing')->with(array(
+      'status' => '',
+      'status_message' => ''
+    ));
   }
 
   public function about() {

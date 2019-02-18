@@ -17,8 +17,8 @@
         <link rel="icon" href="img/favicon.ico" type="image/x-icon">
         <!-- Master Css -->
         <link href="css/jquery-ui.css" rel="stylesheet">
-        <link href="assests/css/main.css" rel="stylesheet">
-        <link href="assests/css/color.css" rel="stylesheet" id="colors">
+        <link href="assets/css/main.css" rel="stylesheet">
+        <link href="assets/css/color.css" rel="stylesheet" id="colors">
         <link href="css/app.css" rel="stylesheet">
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -38,18 +38,18 @@
       </div>
 
       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-      <script src="assests/js/jquery.min.js"></script>
+      <script src="assets/js/jquery.min.js"></script>
       <script src="js/jquery-ui.js"></script>
       <!-- Include all compiled plugins (below), or include individual files as needed -->
-      <script src="assests/js/bootstrap.min.js"></script>
-      {{-- <script src="assests/plugins/owl-carousel/js/owl.carousel.min.js"></script> --}}
-      {{-- <script src="assests/plugins/megamenu/js/hover-dropdown-menu.js"></script> --}}
-      {{-- <script src="assests/plugins/megamenu/js/jquery.hover-dropdown-menu-addon.js"></script> --}}
-      <script src="assests/plugins/fancyBox/js/jquery.fancybox.pack.js"></script>
-      <script src="assests/plugins/fancyBox/js/jquery.fancybox-media.js"></script>
-      {{-- <script src="assests/plugins/appear/js/jquery.appear.js"></script> --}}
-      {{-- <script src="assests/plugins/switcher/js/switcher.js"></script> --}}
-      <script src="assests/js/main.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+      {{-- <script src="assets/plugins/owl-carousel/js/owl.carousel.min.js"></script> --}}
+      {{-- <script src="assets/plugins/megamenu/js/hover-dropdown-menu.js"></script> --}}
+      {{-- <script src="assets/plugins/megamenu/js/jquery.hover-dropdown-menu-addon.js"></script> --}}
+      <script src="assets/plugins/fancyBox/js/jquery.fancybox.pack.js"></script>
+      <script src="assets/plugins/fancyBox/js/jquery.fancybox-media.js"></script>
+      {{-- <script src="assets/plugins/appear/js/jquery.appear.js"></script> --}}
+      {{-- <script src="assets/plugins/switcher/js/switcher.js"></script> --}}
+      <script src="assets/js/main.js"></script>
 
     </body>
 </html>

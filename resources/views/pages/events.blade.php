@@ -11,7 +11,7 @@
     <div class="clear"></div>
 
     <section class=" bg padT100 padB70">
-      <p>Events Page</p>
+      <h4>Coming Soon!</h4>
     </section>
 
     <div class="clear"></div>

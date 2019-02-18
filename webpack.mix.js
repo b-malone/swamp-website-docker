@@ -17,6 +17,7 @@ mix.js('resources/js/app.js', 'public/js')
 mix.copy('resources/js/jquery-ui.js', 'public/js/jquery-ui.js');
 mix.copy('resources/sass/jquery-ui.css', 'public/css/jquery-ui.css');
 
+mix.copyDirectory('resources/assets', 'public/assets');
 mix.copyDirectory('resources/img', 'public/img');
 mix.copyDirectory('resources/sass/images', 'public/css/images');
 

@@ -36,11 +36,7 @@
       <div class="about-us-section">
         <div class="container">
           <div class="row">
-            {{-- <div class="col-md-12 hidden-lg hidden-md">
-                <figure>
-                  <img class="responsive-img img" src="img/survey-sites.png" alt="">
-                </figure>
-            </div> --}}
+
             <div class="col-md-4 col-sm-6 col-xs-12">
               <figure>
                 <img class="responsive-img img" src="img/survey-sites.png" alt="">
@@ -53,9 +49,10 @@
             <div class="col-md-4 hidden-xs hidden-sm">
               <div class="about-us">
                 <figure></figure>
-                <img src="assests/img/about-us/Layer-66.jpg" alt="">
+                <img src="assets/img/about-us/Layer-66.jpg" alt="">
               </div>
             </div>
+
             <div class="col-md-4 col-sm-6 col-xs-12">
               <figure>
                 <img class="responsive-img img" src="img/landing_frog_pic.jpg" alt="">
@@ -64,11 +61,28 @@
                 <h4>volunteer</h4>
                 <p>SWAMP is community and volunteer run. We provide free training, education and adventures!</p>
               </div>
-              {{-- <div class="about-us">
-                  <h4><a href="#">Reports</a></h4>
-                  <p></p>
-              </div> --}}
             </div>
+
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <figure>
+                <img class="responsive-img img" src="" alt="">
+              </figure>
+              <div class="about-us">
+                <h4>Actively Monitoring Community</h4>
+                <p>We will train you to conduct amphibian surveys in ponds here in Clark County. The surveys will occur in early Feburary through March. <span md-colors="{color:'accent'}">No previous experience with frogs and salamanders is necessary!</span> As a volunteer, you will learn to search for, identify and count amphibian egg masses. Data obtained will provide essential information for amphibian conservation. We need to know what out’s there and where it is.</p>
+              </div>
+            </div>
+
+            {{-- <div class="col-md-4 col-sm-6 col-xs-12">
+              <figure>
+                <img class="responsive-img img" src="" alt="">
+              </figure>
+              <div class="about-us">
+                <h4>Sites Map&nbsp;&nbsp;<i class="glyphicon glyphicon-new-window"></i></h4>
+                <p></p>
+              </div>
+            </div> --}}
+
           </div>
         </div>
       </div>

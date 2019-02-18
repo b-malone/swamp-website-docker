@@ -59,23 +59,23 @@
 
           </div>
           {{-- PREV post --}}
-          <div class="col-md-6 col-sm-6 col-xs-12">
+          {{-- <div class="col-md-6 col-sm-6 col-xs-12">
             <div class="paginations post-pagination">
               <a href="#"><span>previous post</span></a>
               <a href="#">
                 <h5>Heading Title of Children</h5>
               </a>
             </div>
-          </div>
+          </div> --}}
           {{-- NEXT post --}}
-          <div class="col-md-6 col-sm-6 col-xs-12 text-right">
+          {{-- <div class="col-md-6 col-sm-6 col-xs-12 text-right">
             <div class="post-pagination">
               <a href="#"><span>next post</span></a>
               <a href="#">
                 <h5>Heading Title of Children</h5>
               </a>
             </div>
-          </div>
+          </div> --}}
           {{-- TAGS --}}
           <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="category-tags marT50">

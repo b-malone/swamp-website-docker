@@ -12,28 +12,13 @@
 
     <section class=" bg padT100 padB70">
 
-      {{-- <div class="row">
+      {{--
+      <div class="row">
         <!-- Data Submission (Online) -->
         <div class="col-xs-12">
           @include('partials.article', array('title' => 'Submitting Data', 'href' => 'http://spreadsheets.google.com/viewform?key=pNXZClz4xRjo7tL5awlMqAQ&amp;hl=en', 'linkText' => 'Click here to enter it electronically'))
         </div>
-
-        <!-- Forms -->
-        <div class="row">
-          <div class="col-xs-12 col-sm-6">
-            @include('partials.downloadable', array('title' => 'Eggmass Identification', 'href' => '/content/documents/eggmass_id_sheet.pdf', 'subtitle' => 'A super secret cheat sheet!'))
-          </div>
-          <div class="col-xs-12 col-sm-6">
-            @include('partials.downloadable', array('title' => '(BLANK) Survey Datasheet', 'href' => '/content/forms/survey_sheet.pdf', 'subtitle' => 'A fill-in sheet for survey data'))
-          </div>
-          <div class="col-xs-12 col-sm-6">
-            @include('partials.downloadable', array('title' => 'Monitoring Sites Data', 'href' => 'http://spreadsheets.google.com/pub?key=pNXZClz4xRjo7tL5awlMqAQ', 'subtitle' => 'See where and what amphibians have been found'))
-          </div>
-          <div class="col-xs-12 col-sm-6">
-            @include('partials.downloadable', array('title' => 'Marking a (new) Site', 'href' => 'http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Clark+County+Washington&amp;sll=45.713324,-122.689882&amp;sspn=0.006637,0.016651&amp;g=12717+NW+19th+Ave,+Vancouver,+WA+98685&amp;ie=UTF8&amp;ll=45.86515,-122.519531&amp;spn=0.847259,2.131348&amp;t=h&amp;z=9&amp;iwloc=addr', 'subtitle' => 'Googlemaps can help you determine the geographic coordinates (LAT, LONG)'))
-          </div>
-        </div>
-      </div> --}}
+        --}}
 
         <div class="faqs-section">
             <div class="container">
@@ -106,7 +91,7 @@
                         <div class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-6" aria-labelledby="ui-id-5" role="tabpanel" aria-hidden="true" style="display: none; height: 873px;">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
                             <p>Sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</p>
-                            <img src="assests/img/faqs/Layer-94.jpg" alt="">
+                            <img src="assets/img/faqs/Layer-94.jpg" alt="">
                         </div>
                         <h4 class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-7" aria-controls="ui-id-8" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>torquent per conubia</h4>
                         <div class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-8" aria-labelledby="ui-id-7" role="tabpanel" aria-hidden="true" style="display: none; height: 873px;">
@@ -119,7 +104,7 @@
                         <div class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-10" aria-labelledby="ui-id-9" role="tabpanel" aria-hidden="true" style="display: none; height: 873px;">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
                             <p>Sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</p>
-                            <img src="assests/img/faqs/Layer-94.jpg" alt="">
+                            <img src="assets/img/faqs/Layer-94.jpg" alt="">
                         </div>
                         <h4 class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-11" aria-controls="ui-id-12" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>nam enim risus, molestie</h4>
                         <div class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-12" aria-labelledby="ui-id-11" role="tabpanel" aria-hidden="true" style="display: none; height: 873px;">
@@ -141,7 +126,7 @@
                                       <div class="blog-recent-post">
                                           <div class="col-md-4 col-sm-4 col-xs-4 padL0 text-left">
                                               <figure>
-                                                  <img src="assests/img/blog/blog4.jpg" alt="">
+                                                  <img src="assets/img/blog/blog4.jpg" alt="">
                                               </figure>
                                           </div>
                                           <div class="col-md-8 col-sm-8 col-xs-8 padL0 text-left">
@@ -158,7 +143,7 @@
                                       <div class="blog-recent-post">
                                           <div class="col-md-4 col-sm-4 col-xs-4 padL0 text-left">
                                               <figure>
-                                                  <img src="assests/img/blog/blog5.jpg" alt="">
+                                                  <img src="assets/img/blog/blog5.jpg" alt="">
                                               </figure>
                                           </div>
                                           <div class="col-md-8 col-sm-8 col-xs-8 padL0 text-left">
@@ -175,7 +160,7 @@
                                       <div class="blog-recent-post">
                                           <div class="col-md-4 col-sm-4 col-xs-4 padL0 text-left">
                                               <figure>
-                                                  <img src="assests/img/blog/blog6.jpg" alt="">
+                                                  <img src="assets/img/blog/blog6.jpg" alt="">
                                               </figure>
                                           </div>
                                           <div class="col-md-8 col-sm-8 col-xs-8 padL0 text-left">
