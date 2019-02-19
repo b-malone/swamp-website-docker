@@ -4,8 +4,26 @@
     {{-- <div class="loader"><span class="rotating"></span></div> --}}
     @include('partials.header')
 
-    <!-- //***slider-section Start***// -->
     <div class="clear"></div>
+
+    {{-- <div class="alert alert-success alert-dismissible" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      ALERT
+    </div> --}}
+
+    @if (session('status'))
+      <div class="alert alert-success alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        {{ session('status') }}
+      </div>
+    @elseif (session('error'))
+      <div class="alert alert-danger" >
+        {{ session('error') }}
+      </div>
+    @endif
+
+    <div class="clear"></div>
+
     <div class="slider-section">
       <div id="slider" class="owl-carousel owlCarousel">
         <div class="item">
@@ -45,8 +63,10 @@
               <div class="col-md-4 col-sm-5 col-xs-12">
 
                 <div class="email-detail">
-                  {{-- @if (session('send_msg_status'))
-                    <b>{{ session('status_message') }}</b>
+                  {{-- @if (\Session::has('alert'))
+                    <div class="alert alert-success" style="z-index: 1000;">
+                      {!! \Session::get('success') !!}
+                    </div>
                   @else --}}
                     <form method="post" action="{{ url('/email/message') }}" name="email-message" class="email-message">
                       {{ csrf_field() }}

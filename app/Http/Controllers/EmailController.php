@@ -2,13 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use Session;
+// use Illuminate\Support\Facades\Session;
 use Illuminate\Http\Request;
 use App\Mail\Message;
 use App\Mail\Volunteer;
 
 class EmailController extends Controller
 {
-  public $toAddr = "bmalone.developer@gmail.com";
+  public $toAddr = "admin@swampproject.org";
 
   /**
    * @summary
@@ -34,17 +36,17 @@ class EmailController extends Controller
     } catch(\Exception $e){
       // ERROR
       return response()->json([
-        'status' => 'error',
-        'message' => $e->getMessage(),
-        'params' => json_encode($request->input())
+        'error' => $e->getMessage()
       ]);
+      // return redirect()->back()->with(array(
+      //   'error' => $e->getMessage()
+      // ));
     }
 
     // SUCCESS
     // return response()->json(['message' => 'Request completed']);
-    return redirect('/')->with(array(
-      'alert' => 'Message sent!'
-    ));
+    $request->session()->keep('status', 'Message sent!');
+    return redirect()->back()->with('status', 'Message sent!');
   }
 
   /**
@@ -62,17 +64,17 @@ class EmailController extends Controller
     } catch(\Exception $e){
       // ERROR
       return response()->json([
-        'status' => 'error',
-        'message' => $e->getMessage(),
-        'params' => json_encode($request->input())
+        'error' => $e->getMessage()
       ]);
+      // return redirect()->back()->with(array(
+      //   'error' => $e->getMessage()
+      // ));
     }
 
     // SUCCESS
     // return response()->json(['message' => 'Request completed']);
-    return redirect()->back()->with(array(
-      'alert' => 'Volunteer request sent!'
-    ));
+    $request->session()->keep('status', 'Volunteer request sent!');
+    return redirect()->back()->with('alert', 'Volunteer request sent!');
   }
 
   public function send(Request $request) {

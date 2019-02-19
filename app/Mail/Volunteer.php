@@ -27,7 +27,7 @@ class Volunteer extends Mailable
        $this->email = $email;
 
        $this->title = "New Swamp Volunteer";
-       $this->content = "Please contact " . $email . " about volunteering.";
+       $this->content = "Please contact me about volunteering!";
      }
 
     /**
@@ -37,7 +37,7 @@ class Volunteer extends Mailable
      */
     public function build()
     {
-      return $this->view('emails.test')
+      return $this->view('emails.basic')
                   ->from("bmalone.developer@gmail.com", "SWAMP")
                   ->subject("New Swamp Volunteer");
        // return $this->view('emails.volunteer');

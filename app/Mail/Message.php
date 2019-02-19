@@ -41,7 +41,7 @@ class Message extends Mailable
      */
     public function build()
     {
-        return $this->view('emails.test')
+        return $this->view('emails.basic')
                     ->from("bmalone.developer@gmail.com", "SWAMP")
                     ->subject("Swamp Website Message");
         // return $this->view('emails.message');

@@ -17,6 +17,7 @@
         <link rel="icon" href="img/favicon.ico" type="image/x-icon">
         <!-- Master Css -->
         <link href="css/jquery-ui.css" rel="stylesheet">
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
         <link href="assets/css/main.css" rel="stylesheet">
         <link href="assets/css/color.css" rel="stylesheet" id="colors">
         <link href="css/app.css" rel="stylesheet">
@@ -34,12 +35,6 @@
        @show --}}
 
       <div id="page" class="container-fluid">
-        @if (session('alert'))
-          <div class="alert alert-success">
-            {{ session('alert') }}
-          </div>
-        @endif
-
         @yield('content')
       </div>
 
