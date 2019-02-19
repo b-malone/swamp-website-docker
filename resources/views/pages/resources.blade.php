@@ -68,7 +68,7 @@
                         <br>
                         <p>
                           <a class="link-text" aria-label="amphibians spreadsheet" target="_blank"
-                          href="http://spreadsheets.google.com/pub?key=pNXZClz4xRjo7tL5awlMqAQ">
+                          href="https://docs.google.com/spreadsheets/d/1zyH0i3g9N6SN6OgfhuGXCKsXRhEUXPOsd5hEXBBE3-Y/edit?usp=sharing">
                               Amphibians Spreadsheet<i class="glyphicon glyphicon-link"></i>
                           </a>
                         </p>

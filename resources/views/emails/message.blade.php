@@ -1,11 +1,10 @@
 <html>
   <head></head>
   <body style="background: black; color: white;">
-    <h1>Swamp Volunteer Candidate</h1>
-    <hr>
+    <h1>Swamp Website Message</h1>
     <p>Name:&nbsp;&nbsp;{{ $name }}</p>
     <p>Email:&nbsp;&nbsp;{{ $email }}</p>
-    <br>
-    <p>Please contact {{ $name }} to assist them in volunteering.</p>
+    <hr>
+    <p>{{ $message }}</p>
   </body>
 </html>

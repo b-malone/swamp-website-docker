@@ -3114,3 +3114,9 @@
   text-decoration: underline;
 }
 
+form.email-message textarea,
+form.email-message input {
+  max-width: 230px;
+  background-color: #eeeeee;
+}
+

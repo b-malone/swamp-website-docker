@@ -77,7 +77,7 @@
             </div>
           </div> --}}
           {{-- TAGS --}}
-          <div class="col-md-12 col-sm-12 col-xs-12">
+          {{-- <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="category-tags marT50">
               <h4>tags</h4>
               <div class="tags">
@@ -89,7 +89,7 @@
                 </ul>
               </div>
             </div>
-          </div>
+          </div> --}}
           {{-- blockquote --}}
           <div class="col-md-12 col-sm-12 col-xs-12">
               <div class="author marT50">

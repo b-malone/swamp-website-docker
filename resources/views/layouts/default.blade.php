@@ -34,6 +34,12 @@
        @show --}}
 
       <div id="page" class="container-fluid">
+        @if (session('alert'))
+          <div class="alert alert-success">
+            {{ session('alert') }}
+          </div>
+        @endif
+
         @yield('content')
       </div>
 
@@ -42,13 +48,8 @@
       <script src="js/jquery-ui.js"></script>
       <!-- Include all compiled plugins (below), or include individual files as needed -->
       <script src="assets/js/bootstrap.min.js"></script>
-      {{-- <script src="assets/plugins/owl-carousel/js/owl.carousel.min.js"></script> --}}
-      {{-- <script src="assets/plugins/megamenu/js/hover-dropdown-menu.js"></script> --}}
-      {{-- <script src="assets/plugins/megamenu/js/jquery.hover-dropdown-menu-addon.js"></script> --}}
       <script src="assets/plugins/fancyBox/js/jquery.fancybox.pack.js"></script>
       <script src="assets/plugins/fancyBox/js/jquery.fancybox-media.js"></script>
-      {{-- <script src="assets/plugins/appear/js/jquery.appear.js"></script> --}}
-      {{-- <script src="assets/plugins/switcher/js/switcher.js"></script> --}}
       <script src="assets/js/main.js"></script>
 
     </body>

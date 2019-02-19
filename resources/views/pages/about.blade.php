@@ -23,6 +23,24 @@
               <p>
                 An all volunteer program dedicated to empowering community members to assess and preserve the unique ecological resources for our community.
               </p>
+              <br>
+              <p>
+                While it's hard to list all of the activities and efforts that go into a civic science project, we of the Swamp tribe are commonly found:
+              </p>
+              <ul class="list-unstyled">
+                <li>
+                  <i class="glyphicon glyphicon-asterisk"></i>&nbsp;&nbsp;Surveying local monitoring sites
+                </li>
+                <li>
+                  <i class="glyphicon glyphicon-asterisk"></i>&nbsp;&nbsp;Training volunteers and members
+                </li>
+                <li>
+                  <i class="glyphicon glyphicon-asterisk"></i>&nbsp;&nbsp;Recruitment and educational outreach
+                </li>
+                <li>
+                  <i class="glyphicon glyphicon-asterisk"></i>&nbsp;&nbsp;Having fun and making friends outdoors!
+                </li>
+              </ul>
               <br />
               <blockquote>
                 <p>We want to educate Clark County residents about the importance of amphibians and their associated habitats,” said Dr. Ritson. “We hope to encourage their protection in several ways: engaging citizens in wildlife protection by training volunteers to survey and monitor pond-breeding amphibian species, providing data essential to species conservation decisions, and increasing public understanding of the importance of wetlands in a rapidly urbanizing region.</p>

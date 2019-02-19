@@ -2,6 +2,8 @@
 
 namespace App\Mail;
 
+// https://api.mailgun.net/v3/YOUR_DOMAIN/
+
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
@@ -15,6 +17,9 @@ class Message extends Mailable
     public $email;
     public $message;
 
+    public $title;
+    public $content;
+
     /**
      * Create a new message instance.
      *
@@ -22,8 +27,11 @@ class Message extends Mailable
      */
     public function __construct(String $name, String $email, String $message) {
       $this->name = $name;
-      $this->name = $name;
-      $this->name = $name;
+      $this->email = $email;
+      $this->message = $message;
+
+      $this->title = "Swamp Website Message";
+      $this->content = $message;
     }
 
     /**
@@ -33,11 +41,10 @@ class Message extends Mailable
      */
     public function build()
     {
-        return $this->view('emails.basic')
-                     ->with([
-                       'title' => "Message from: $name",
-                       'content' => join('<br><br>', array("Name: $name", "Email: $email", $msg))
-                    ]);
+        return $this->view('emails.test')
+                    ->from("bmalone.developer@gmail.com", "SWAMP")
+                    ->subject("Swamp Website Message");
+        // return $this->view('emails.message');
     }
 
 

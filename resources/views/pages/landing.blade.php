@@ -20,8 +20,8 @@
                   <div class="slider-box">
                     <span class="top-border"></span>
                     <span class="bottom-border"></span>
-                    <h1><span class="divider">Mission</span></h1>
-                    <p>Dedicated to protecting and monitoring the environment in SouthWest Washington, SWAMP surveys local amphibian sites and meaures ecosystem health annually. Amphibians can be indicators of the state of health of wetlands, which are central to environmental health.</p>
+                    <h1><span class="divider hidden-xs">Mission</span></h1>
+                    <p class="hidden-xs">Dedicated to protecting and monitoring the environment in SouthWest Washington, SWAMP surveys local amphibian sites and meaures ecosystem health annually. Amphibians can be indicators of the state of health of wetlands, which are central to environmental health.</p>
                     {{--  LINK TO BLOG SECTION! --}}
                     {{-- <span class="divider_btn">
                       <a href="#">read more</a>
@@ -41,26 +41,26 @@
       <div class="message-section">
         <div class="container">
           <div class="row">
-            <div class="item">
+            <div class="item" style="margin-top: 15px;">
               <div class="col-md-4 col-sm-5 col-xs-12">
 
                 <div class="email-detail">
-                  @if (session('status'))
+                  {{-- @if (session('send_msg_status'))
                     <b>{{ session('status_message') }}</b>
-                  @else
-                    <form method="post" action="{{ url('/email/message') }}" name="email-message" class="search-bar">
+                  @else --}}
+                    <form method="post" action="{{ url('/email/message') }}" name="email-message" class="email-message">
                       {{ csrf_field() }}
 
                       <b>Name</b>
                       <input type="text" name="name" placeholder="Full Name">
                       <b>Email</b>
-                      <input type="text" name="email" placeholder="info@gmail.com">
+                      <input type="email" name="email" placeholder="info@gmail.com">
                       <b>Message</b>
                       <textarea row="8" cols="8" name="message"></textarea>
                       </span>
                       <button type="submit" class="swamp-btn read-more" value="submit">submit</button>
                     </form>
-                  @endif
+                  {{-- @endif --}}
                 </div>
 
               </div>
@@ -91,6 +91,15 @@
                 <p>SWAMP is a community and volunteer run organization.
                   Our activities help monitor and improve the health of wetlands in
                   Washington state.
+                </p>
+                <p>
+                  Peter Ritson, PhD., an environmental scientist,
+                  is looking for volunteers to search for amphibians and their eggs.
+                  This is the tenth year of this entirely volunteer program which monitors
+                  Clark County's wetlands by examining amphibian populations. The project
+                  involves training community volunteers to search for pond breeding
+                  amphibians and their eggs this winter, then reporting the findings to
+                  local and state agencies.
                 </p>
               </div>
 
