@@ -10,7 +10,8 @@ use App\Mail\Volunteer;
 
 class EmailController extends Controller
 {
-  public $toAddr = "admin@swampproject.org";
+  // public $toAddr = "admin@swampproject.org";
+  public $toAddr = "bmalone.developer@gmail.com";
 
   /**
    * @summary
@@ -47,6 +48,9 @@ class EmailController extends Controller
     // return response()->json(['message' => 'Request completed']);
     $request->session()->keep('status', 'Message sent!');
     return redirect()->back()->with('status', 'Message sent!');
+
+    // return Redirect::route('user', array('nick' => $username));
+    // return \View::make('pages.email-success');
   }
 
   /**
@@ -75,6 +79,7 @@ class EmailController extends Controller
     // return response()->json(['message' => 'Request completed']);
     $request->session()->keep('status', 'Volunteer request sent!');
     return redirect()->back()->with('alert', 'Volunteer request sent!');
+    // return \View::make('pages.email-success');
   }
 
   public function send(Request $request) {
