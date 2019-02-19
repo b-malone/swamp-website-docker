@@ -11,7 +11,8 @@ use App\Mail\Volunteer;
 class EmailController extends Controller
 {
   // public $toAddr = "admin@swampproject.org";
-  public $toAddr = "bmalone.developer@gmail.com";
+  // public $toAddr = "bmalone.developer@gmail.com";
+  public $toAddr = "clarkfrog@gmail.com";
 
   /**
    * @summary
