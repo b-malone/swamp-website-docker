@@ -20,16 +20,11 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('password');
             $table->string('email')->unique();
+            // ERROR - user_settings migration requires "rememberToken" field!
             $table->rememberToken();
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP'));
         });
-
-        // FKeys Alter
-        /* FOR USER_ROLES TABLE !!! */
-        // Schema::table('users', function($table){
-        //     $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
-        // });
     }
 
     /**
