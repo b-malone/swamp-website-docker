@@ -46,3 +46,8 @@ Route::get('/people', [
 // Route::post('/send', 'EmailController@send');
 Route::post('/email/message', 'EmailController@sendMessage');
 Route::post('/email/volunteer', 'EmailController@sendVolunteerRequest');
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
