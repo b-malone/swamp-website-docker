@@ -16,81 +16,52 @@
         <div class="row">
           <div class="col-md-12">
 
-            <div class="single-blog">
-              <div class="blog">
-                <figure class="blog-image">
-                  <img class="img responsive-img" src="/img/calm-frog.jpg" alt="">
-                </figure>
-                <div class="blog-detail">
-                  <h4>Initial Findings Report</h4>
-
-                  <div class="col-lg-6 order-lg-2 text-white showcase-img report-img">
+            @foreach ($posts as $post)
+              <div class="single-blog">
+                <div class="blog">
+                  <figure class="blog-image">
                     {{-- <img class="img responsive-img" src="/img/calm-frog.jpg" alt=""> --}}
-                  </div>
-                  <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-                    <p class="lead mb-0">
-                      Our first report is out! Read about our initial findings from 2009 in the <span md-colors="{color:'accent'}">Clark County Amphibians Report</span> by clicking the link above.
-                    </p>
-                    <hr>
+                     {{-- http://127.0.0.1:8000/blog_posts/March2019/bkiu6kUdWU8SZGMbwvC7.png --}}
+                    <img class="img responsive-img" src="/storage/{{ $post->image }}" alt="">
+                  </figure>
+                  <div class="blog-detail">
+                    <h4>{{ $post->title }}</h4>
 
-                    <a class="swamp-btn submit" href="#" href='/content/documents/clark_county_amphibian_report.pdf' target='_self' download='report_2009.pdf'>Download Amphibians Report</a>
-                    {{-- <button type="button" class="btn btn-primary btn-lg btn-block">
-                      <a href='/content/documents/clark_county_amphibian_report.pdf' target='_self' download='report_2009.pdf' class="btn btn-large swamp-btn" style="color: #fff;">
-                        Download Amphibians Report&nbsp;&nbsp;<i class="glyphicon glyphicon-download"></i>
-                      </a>
-                    </button> --}}
-                  </div>
-
-                  <div class="row padT20">
-                    <div class="col-md-6 col-sm-6 col-xs-6 ">
-                      <div class="blog-member-detail">
-                        <p>by Peter Ritson, PhD</p>
-                      </div>
+                    <div class="col-lg-6 order-lg-2 text-white showcase-img report-img">
                     </div>
-                    <div class="col-md-6 col-sm-6 col-xs-6">
-                      <div class="blog-member-detail  text-right">
-                        <p>Vancouver, WA &nbsp;&nbsp; WSU-Vancouver</p>
+                    <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                      <p class="lead mb-0">
+                        {!! html_entity_decode($post->body) !!}
+                      </p>
+                      <hr>
+                    </div>
+
+                    <div class="row padT20">
+                      <div class="col-md-6 col-sm-6 col-xs-6 ">
+                        <div class="blog-member-detail">
+                          <p>by Peter Ritson, PhD</p>
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-sm-6 col-xs-6">
+                        {{-- <div class="blog-member-detail  text-right">
+                          <p>Vancouver, WA &nbsp;&nbsp; WSU-Vancouver</p>
+                        </div> --}}
+                        <div class="blog-member-detail  text-right">
+                          <p>{{ $post->meta_description }}</p>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
+            @endforeach
 
           </div>
           {{-- PREV post --}}
-          {{-- <div class="col-md-6 col-sm-6 col-xs-12">
-            <div class="paginations post-pagination">
-              <a href="#"><span>previous post</span></a>
-              <a href="#">
-                <h5>Heading Title of Children</h5>
-              </a>
-            </div>
-          </div> --}}
-          {{-- NEXT post --}}
-          {{-- <div class="col-md-6 col-sm-6 col-xs-12 text-right">
-            <div class="post-pagination">
-              <a href="#"><span>next post</span></a>
-              <a href="#">
-                <h5>Heading Title of Children</h5>
-              </a>
-            </div>
-          </div> --}}
-          {{-- TAGS --}}
-          {{-- <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="category-tags marT50">
-              <h4>tags</h4>
-              <div class="tags">
-                <ul>
-                  <li><a href="#">Animals</a></li>
-                  <li><a href="#">Nature</a></li>
-                  <li><a href="#">Recycle</a></li>
-                  <li><a href="#">Events</a></li>
-                </ul>
-              </div>
-            </div>
-          </div> --}}
-          {{-- blockquote --}}
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            {{ $posts->links() }}
+          </div>
+
           <div class="col-md-12 col-sm-12 col-xs-12">
               <div class="author marT50">
                   <blockquote>Stay up to date on SWAMP events, reports and environmental actions by reading our blog and joining us for protecting the local wetlands.</blockquote>

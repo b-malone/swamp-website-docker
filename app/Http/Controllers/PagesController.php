@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\View;
+use App\Post;
+use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
 
 class PagesController extends Controller
@@ -21,7 +23,10 @@ class PagesController extends Controller
   }
 
   public function blog() {
-    return \View::make('pages.blog');
+    // Get all PUBLISHED blog posts, paginated to 5 results
+    $posts = DB::table('blog_posts')->where('status', 'PUBLISHED')->simplePaginate(5);
+
+    return \View::make('pages.blog')->with('posts', $posts);
   }
 
   // public function calendar() {

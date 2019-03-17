@@ -6,3 +6,7 @@
 @import "./responsive.css";
 
 @import "./style.css";
+
+figure.blog-image {
+  background-color: #202020;
+}

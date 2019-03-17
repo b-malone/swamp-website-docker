@@ -10,7 +10,7 @@
         <meta name="author" content="b-malone" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>SWAMP</title>
+        <title>{{ setting('site.title') }}</title>
         <!-- Bootstrap -->
         <!-- Favicon -->
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
