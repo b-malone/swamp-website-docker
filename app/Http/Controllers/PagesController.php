@@ -24,7 +24,16 @@ class PagesController extends Controller
 
   public function blog() {
     // Get all PUBLISHED blog posts, paginated to 5 results
-    $posts = DB::table('blog_posts')->where('status', 'PUBLISHED')->simplePaginate(5);
+    $posts = DB::table('blog_posts')
+      ->join('users', 'users.id', '=', 'blog_posts.author_id')
+      ->where('status', 'PUBLISHED')
+      ->simplePaginate(5);
+
+    // $fields = ['a', 'b', 'c', 'N'];
+    // $object = Model::find($id);
+    // return collect($object->toArray())->except($fields);
+
+    // dd($posts);
 
     return \View::make('pages.blog')->with('posts', $posts);
   }
@@ -45,9 +54,6 @@ class PagesController extends Controller
   }
 
   public function events() {
-    // $now = Carbon::now();
-    // $dtStr = $now->year;
-
     return \View::make('pages.events');
   }
 

@@ -21,7 +21,7 @@
                 <div class="blog">
                   <figure class="blog-image">
                     {{-- <img class="img responsive-img" src="/img/calm-frog.jpg" alt=""> --}}
-                     {{-- http://127.0.0.1:8000/blog_posts/March2019/bkiu6kUdWU8SZGMbwvC7.png --}}
+                    {{-- http://127.0.0.1:8000/blog_posts/March2019/bkiu6kUdWU8SZGMbwvC7.png --}}
                     <img class="img responsive-img" src="/storage/{{ $post->image }}" alt="">
                   </figure>
                   <div class="blog-detail">
@@ -39,7 +39,7 @@
                     <div class="row padT20">
                       <div class="col-md-6 col-sm-6 col-xs-6 ">
                         <div class="blog-member-detail">
-                          <p>by Peter Ritson, PhD</p>
+                          {{-- <p>{{ Helper::toName($post->name) }}</p> --}}
                         </div>
                       </div>
                       <div class="col-md-6 col-sm-6 col-xs-6">

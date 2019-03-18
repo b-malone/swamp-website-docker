@@ -1,5 +1,7 @@
 <?php
 
+// namespace App\Helpers;
+
 /*
 |--------------------------------------------------------------------------
 | Detect Active Route
@@ -30,4 +32,30 @@ function isActiveRoute($route, $output = "active")
 //         if (Route::currentRouteName() == $route) return $output;
 //     }
 //
+// }
+
+/*
+|--------------------------------------------------------------------------
+| Helpers Custom Class
+|--------------------------------------------------------------------------
+|
+| Providee utility methods for use in Blade Templates.
+|
+*/
+// class Helper
+// {
+//     public static function uppercase(string $string)
+//     {
+//         return strtoupper($string);
+//     }
+//
+//     public static function toName(srting $str)
+//     {
+//         return Str::title( Str::camel( $post->name ) );
+//     }
+// }
+
+// function toName($str)
+// {
+//     return Str::title( Str::camel( $post->name ) );
 // }
