@@ -1,6 +1,6 @@
 <?php
 
-// namespace App\Helpers;
+use Illuminate\Support\Str;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,26 +36,15 @@ function isActiveRoute($route, $output = "active")
 
 /*
 |--------------------------------------------------------------------------
-| Helpers Custom Class
+| Name/Title String Helper
 |--------------------------------------------------------------------------
 |
-| Providee utility methods for use in Blade Templates.
+| Providee utility to capitalize and camel-case a string to be a title
+| or name.
 |
 */
-// class Helper
-// {
-//     public static function uppercase(string $string)
-//     {
-//         return strtoupper($string);
-//     }
-//
-//     public static function toName(srting $str)
-//     {
-//         return Str::title( Str::camel( $post->name ) );
-//     }
-// }
-
-// function toName($str)
-// {
-//     return Str::title( Str::camel( $post->name ) );
-// }
+function toName(string $str)
+{
+    return strtoupper($str);
+    // return Str::title( Str::camel( $post->name ) );
+}

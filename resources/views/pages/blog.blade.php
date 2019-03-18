@@ -39,13 +39,10 @@
                     <div class="row padT20">
                       <div class="col-md-6 col-sm-6 col-xs-6 ">
                         <div class="blog-member-detail">
-                          {{-- <p>{{ Helper::toName($post->name) }}</p> --}}
+                          <p>{{ toName($post->name) }}</p>
                         </div>
                       </div>
                       <div class="col-md-6 col-sm-6 col-xs-6">
-                        {{-- <div class="blog-member-detail  text-right">
-                          <p>Vancouver, WA &nbsp;&nbsp; WSU-Vancouver</p>
-                        </div> --}}
                         <div class="blog-member-detail  text-right">
                           <p>{{ $post->meta_description }}</p>
                         </div>
