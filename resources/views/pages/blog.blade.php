@@ -20,8 +20,6 @@
               <div class="single-blog">
                 <div class="blog">
                   <figure class="blog-image">
-                    {{-- <img class="img responsive-img" src="/img/calm-frog.jpg" alt=""> --}}
-                    {{-- http://127.0.0.1:8000/blog_posts/March2019/bkiu6kUdWU8SZGMbwvC7.png --}}
                     <img class="img responsive-img" src="/storage/{{ $post->image }}" alt="">
                   </figure>
                   <div class="blog-detail">
