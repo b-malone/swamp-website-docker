@@ -16,7 +16,6 @@
         "laravel/tinker": "^1.0",
         "nesbot/carbon": "1.26.3",
         "pvtl/voyager-blog": "^0.2.7",
-        "spatie/laravel-google-calendar": "^2.2",
         "tcg/voyager": "^1.2"
     },
     "require-dev": {
