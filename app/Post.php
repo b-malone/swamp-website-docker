@@ -11,10 +11,15 @@ class Post extends Model
    *
    * @var string
    */
-  protected $table = 'posts';
+  protected $table = 'blog_posts';
 
   // protected $fillable = [];
 
-
+  /**
+   * Get the category associated with the post.
+   */
+  public function category() {
+    return $this->hasOne('App\Category');
+  }
 
 }

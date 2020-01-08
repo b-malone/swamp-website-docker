@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\View;
 use App\Post;
+use App\Category;
 use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
 
@@ -13,15 +14,21 @@ class PagesController extends Controller
 
   public function index() {
     $posts = DB::table('blog_posts')
+      ->join('categories', 'categories.id', '=', 'blog_posts.category_id')
       ->where('status', 'PUBLISHED')
       ->get();
       // ->simplePaginate(5);
 
+    // $posts = Post::where('status', '=', 'PUBLISHED')->with('category')->get();
+
     // print_r($posts);
+
+    // dd($posts);
 
     $posts = collect($posts)->map(function($p) {
       $p->date = Carbon::parse($p->published_date)->format('M D Y');
       $p->time = Carbon::parse($p->published_date)->format('h:m:s a');
+      // $p->categpry = Category::find($p->category_id)->get()->name;
       return $p;
     });
 

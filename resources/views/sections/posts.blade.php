@@ -47,17 +47,8 @@
 									<div class="row padT20">
 										<div class="col-md-6 col-sm-12 col-xs-12">
 											<div class="blog-member-detail">
-												@if ($post->download)
-													<!-- href='content/maps/MyPlaces.kmz' -->
-													<!-- download='monitoring_sites_map.kmz' -->
-													<a class="swamp-btn submit"
-														href="#" href='content/maps/MyPlaces.kmz'
-														target='_self' download='monitoring_sites_map.kmz'>
-														Download GoogleMap's File
-													</a>
-												@else
-													<p><a class="null-link" href="#">@&nbsp;{{ $post->slug }}</a></p>
-												@endif
+												<p>{{ json_encode($post) }}</p>
+												
 											</div>
 										</div>
 									</div>
