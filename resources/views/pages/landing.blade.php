@@ -133,8 +133,8 @@
 						<div class="row">
 
 							<div class="col-sm-12 col-xs-12">
-								@foreach($posts as $post)
-										<p>POST</p>
+								<!-- @foreach($posts as $post) -->
+									<!-- <p>POST</p> -->
 									<!-- <div class="item">
 										<div class="col-md-4 col-sm-4 col-xs-12 marB30">
 											<div class="blog">
@@ -156,7 +156,7 @@
 											</div>
 										</div>
 									</div> -->
-								@endforeach
+								<!-- @endforeach -->
 							</div>
 
 							<!-- <div class="item">
