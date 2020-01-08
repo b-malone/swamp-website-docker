@@ -132,24 +132,49 @@
 					<div class="container">
 						<div class="row">
 
-							<div class="item">
+							@foreach($post in $posts)
+								<div class="item">
 									<div class="col-md-4 col-sm-4 col-xs-12 marB30">
-											<div class="blog">
-													<div class="blog-detail">
-															<h4><b>2020 Training Day</b></h4>
-															<p>February 15, 2020 <br> 10:30am - 1:00pm</p>
-															<div class="row padT20">
-																	<div class="col-md-6 col-sm-12 col-xs-12">
-																			<div class="blog-member-detail">
-																					<p><a class="null-link" href="#">@&nbsp;WSUV VLIB 201</a></p>
-																			</div>
-																	</div>
-															</div>
+										<div class="blog">
+											<div class="blog-detail">
+												<h4><b>{{ $post->title }}</b></h4>
+												<p>
+													{{ $post->published_date->isoFormat('MMMM Do YYYY') }}
+													<br> 
+													{{ $post->published_date->isoFormat('h:mm:ss a') }}
+												</p>
+												<div class="row padT20">
+													<div class="col-md-6 col-sm-12 col-xs-12">
+														<div class="blog-member-detail">
+															<p><a class="null-link" href="#">@&nbsp;{{ $post->location }}</a></p>
+														</div>
 													</div>
+												</div>
 											</div>
+										</div>
 									</div>
-							</div>
-							<div class="item">
+								</div>
+							@endforeach	
+
+							<!-- <div class="item">
+								<div class="col-md-4 col-sm-4 col-xs-12 marB30">
+									<div class="blog">
+										<div class="blog-detail">
+											<h4><b>2020 Training Day</b></h4>
+											<p>February 15, 2020 <br> 10:30am - 1:00pm</p>
+											<div class="row padT20">
+												<div class="col-md-6 col-sm-12 col-xs-12">
+													<div class="blog-member-detail">
+														<p><a class="null-link" href="#">@&nbsp;WSUV VLIB 201</a></p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div> -->
+
+							<!-- <div class="item">
 									<div class="col-md-4 col-sm-4 col-xs-12 marB30">
 											<div class="blog">
 													<div class="blog-detail">
@@ -198,7 +223,7 @@
 										</div>
 									</div>
 								</div>
-							</div>
+							</div> -->
 
 						</div>
 					</div>
@@ -209,10 +234,13 @@
 						<div class="row">
 
 							<div class="col-md-6 col-md-offset-3">
+								<div class="row">
 								<h3>Submit Data</h3>
-								<div class="dd-theme-border">
+								<div class="dd-theme-border col-md-6 col-sm-12 col-xs-12">
 									<span class="theme-icon"><i class="fa fa-tint" aria-hidden="true"></i></span>
 								</div>
+								</div>
+								<div class="row">
 								<div class="col-md-6 col-sm-12 col-xs-12">
 									<p>
 										Have some survey data to share with us?
@@ -225,6 +253,7 @@
 											</a>
 										</p>
 									</div>
+								</div>
 								</div>
 							</div>
 
