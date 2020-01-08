@@ -132,7 +132,7 @@
 					<div class="container">
 						<div class="row">
 
-							<div class="item">
+							<!-- <div class="item">
 									<div class="col-md-4 col-sm-4 col-xs-12 marB30">
 											<div class="blog">
 													<div class="blog-detail">
@@ -198,7 +198,7 @@
 										</div>
 									</div>
 								</div>
-							</div>
+							</div> -->
 
 						</div>
 					</div>
@@ -215,21 +215,23 @@
 							</div>
 						</div>
 						<div class="row">
-						<div class="col-md-6 col-md-offset-3">
-								<div class="col-md-6 col-sm-12 col-xs-12">
+
+							<div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
+								<p>
+									Have some survey data to share with us?
+								</p>
+							</div>
+							<div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
+								<br>
+								<div class="blog-member-detail">
 									<p>
-										Have some survey data to share with us?
+										<a href="http://spreadsheets.google.com/viewform?key=pNXZClz4xRjo7tL5awlMqAQ&amp;hl=en">
+											Click here to enter it electronically
+										</a>
 									</p>
-									<br>
-									<div class="blog-member-detail">
-										<p>
-											<a href="http://spreadsheets.google.com/viewform?key=pNXZClz4xRjo7tL5awlMqAQ&amp;hl=en">
-												Click here to enter it electronically
-											</a>
-										</p>
-									</div>
 								</div>
 							</div>
+
 						</div>
 					</div>
 				</div>
