@@ -24,7 +24,7 @@ class BlogPostsTableSeeder extends Seeder
       // created_at, updated_at, tags, published_date
       // ADD Existing Post(s)
       DB::table('blog_posts')->insert([
-        'id' => 2,
+        'id' => 3,
         'author_id' => 2,
         'category_id' => 3,
         'title' => 'Initial Findings Report',
