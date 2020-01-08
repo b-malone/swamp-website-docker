@@ -1,0 +1,1 @@
+ALTER TABLE forge.categories ADD COLUMN `parent_id` int(10) unsigned AFTER `id`;
