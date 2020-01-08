@@ -30,6 +30,8 @@
 	<div class="container">
 		<div class="row">
 
+			{!! $posts->render() !!}
+
 			<!-- <div class="col-md-6 col-sm-12 col-xs-12 marB30">
 				@foreach ($posts as $post)
 					<p>POST</p>
