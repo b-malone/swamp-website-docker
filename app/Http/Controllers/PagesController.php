@@ -17,7 +17,7 @@ class PagesController extends Controller
       ->where('status', 'PUBLISHED');
       // ->simplePaginate(5);
 
-    // print_r($posts);
+    print_r($posts);
 
     return \View::make('pages.landing')->with(array(
       'status' => '',
