@@ -30,13 +30,13 @@
 	<div class="container">
 		<div class="row">
 
-			{!! $posts->render() !!}
+			<!-- {!! $posts->render() !!} -->
 
-			<!-- <div class="col-md-6 col-sm-12 col-xs-12 marB30">
+			<div class="col-md-6 col-sm-12 col-xs-12 marB30">
 				@foreach ($posts as $post)
 					<p>POST</p>
 				@endforeach
-			</div> -->
+			</div>
 		
 		</div>
 	</div>

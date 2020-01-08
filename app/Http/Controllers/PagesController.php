@@ -14,8 +14,8 @@ class PagesController extends Controller
   public function index() {
     $posts = DB::table('blog_posts')
       ->join('users', 'users.id', '=', 'blog_posts.author_id')
-      ->where('status', 'PUBLISHED')
-      ->simplePaginate(5);
+      ->where('status', 'PUBLISHED');
+      // ->simplePaginate(5);
 
     // print_r($posts);
 
