@@ -21,7 +21,7 @@ class UsersTable extends Seeder
 
       // CREATE users from development
       DB::table('users')->insert([
-          'id' => 2,
+          'id' => 3,
           'role_id' => 1,
           'name' => 'peter ritsen',
           'password' => bcrypt('frog12'),
@@ -34,7 +34,7 @@ class UsersTable extends Seeder
       ]);
 
       DB::table('users')->insert([
-          'id' => 3,
+          'id' => 4,
           'role_id' => 1,
           'name' => 'bmalone',
           'password' => bcrypt('bmalone'),
@@ -47,7 +47,7 @@ class UsersTable extends Seeder
       ]);
 
       DB::table('users')->insert([
-          'id' => 4,
+          'id' => 5,
           'role_id' => 1,
           'name' => 'michelle devlaeminck',
           'password' => bcrypt('b@r3f33t'),
