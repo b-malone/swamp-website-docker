@@ -132,6 +132,32 @@
 					<div class="container">
 						<div class="row">
 
+							<div class="col-sm-12 col-xs-12">
+								@foreach($posts as $post)
+									<div class="item">
+										<div class="col-md-4 col-sm-4 col-xs-12 marB30">
+											<div class="blog">
+												<div class="blog-detail">
+													<h4><b>{{ $post->title }}</b></h4>
+													<p>
+														{{ $post->published_date->isoFormat('MMMM Do YYYY') }}
+														<br> 
+														{{ $post->published_date->isoFormat('h:mm:ss a') }}
+													</p>
+													<div class="row padT20">
+														<div class="col-md-6 col-sm-12 col-xs-12">
+															<div class="blog-member-detail">
+																<p><a class="null-link" href="#">@&nbsp;{{ $post->location }}</a></p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								@endforeach
+							</div>
+
 							<!-- <div class="item">
 									<div class="col-md-4 col-sm-4 col-xs-12 marB30">
 											<div class="blog">
