@@ -106,7 +106,7 @@
 					<div class="container">
 						<div class="row">
 
-							@include('sections.news', array('posts' => $posts))
+							@include('sections.news', array('posts' => $posts->currentPage()))
 
 							<!-- <div class="item">
 									<div class="col-md-4 col-sm-4 col-xs-12 marB30">
