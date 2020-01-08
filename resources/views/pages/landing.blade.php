@@ -207,12 +207,15 @@
 				<div class="theme-heading">
 					<div class="container">
 						<div class="row">
-
 							<div class="col-md-6 col-md-offset-3">
 								<h3>Submit Data</h3>
 								<div class="dd-theme-border">
 									<span class="theme-icon"><i class="fa fa-tint" aria-hidden="true"></i></span>
 								</div>
+							</div>
+						</div>
+						<div class="row">
+						<div class="col-md-6 col-md-offset-3">
 								<div class="col-md-6 col-sm-12 col-xs-12">
 									<p>
 										Have some survey data to share with us?
@@ -227,7 +230,6 @@
 									</div>
 								</div>
 							</div>
-
 						</div>
 					</div>
 				</div>
