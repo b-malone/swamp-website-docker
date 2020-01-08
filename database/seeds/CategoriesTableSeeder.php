@@ -15,6 +15,31 @@ class CategoriesTableSeeder extends Seeder
      */
     public function run()
     {
+        DB::table('categories')->insert([
+            'parent_id' => null,
+            'name' => 'download',
+            'slug' => 'download',
+            'order' => 1,
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now()
+        ]);
 
+        DB::table('categories')->insert([
+            'parent_id' => null,
+            'name' => 'news',
+            'slug' => 'news',
+            'order' => 1,
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now()
+        ]);
+
+        DB::table('categories')->insert([
+            'parent_id' => null,
+            'name' => 'event',
+            'slug' => 'event',
+            'order' => 1,
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now()
+        ]);
     }
 }

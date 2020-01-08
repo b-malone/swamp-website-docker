@@ -13,11 +13,17 @@ class PagesController extends Controller
 
   public function index() {
     $posts = DB::table('blog_posts')
-      ->join('users', 'users.id', '=', 'blog_posts.author_id')
-      ->where('status', 'PUBLISHED');
+      ->where('status', 'PUBLISHED')
+      ->get();
       // ->simplePaginate(5);
 
-    print_r($posts);
+    // print_r($posts);
+
+    $posts = collect($posts)->map(function($p) {
+      $p->date = Carbon::parse($p->published_date)->format('M D Y');
+      $p->time = Carbon::parse($p->published_date)->format('h:m:s a');
+      return $p;
+    });
 
     return \View::make('pages.landing')->with(array(
       'status' => '',

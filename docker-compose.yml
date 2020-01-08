@@ -10,10 +10,11 @@ services:
     restart: unless-stopped
     tty: true
     environment:
+      DATABASE: forge
       SERVICE_NAME: app
       SERVICE_TAGS: dev
     working_dir: /var/www
-    # command: ./install.sh
+    command: ./setup.sh
     volumes:
        - ./:/var/www
        - ./php/local.ini:/usr/local/etc/php/conf.d/local.ini
@@ -46,6 +47,7 @@ services:
     ports:
       - "3306:3306"
     environment:
+      # TO DO: Swarm Secrets!
       MYSQL_DATABASE: forge
       MYSQL_ROOT_PASSWORD: root
       SERVICE_TAGS: dev

@@ -16,7 +16,7 @@
         "laravel/tinker": "^1.0",
         "nesbot/carbon": "1.26.3",
         "pvtl/voyager-blog": "^0.2.7",
-        "tcg/voyager": "^1.2"
+        "tcg/voyager": "^1.3"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",
