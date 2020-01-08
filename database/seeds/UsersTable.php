@@ -14,11 +14,6 @@ class UsersTable extends Seeder
      */
     public function run()
     {
-      // SETUP User-Role Relations for existing users
-      $this->call([
-        UserRolesTable::class
-      ]);
-
       // CREATE users from development
       DB::table('users')->insert([
           'id' => 3,
