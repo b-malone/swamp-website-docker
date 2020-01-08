@@ -132,7 +132,11 @@
 					<div class="container">
 						<div class="row">
 
-						
+							<div class="col-md-6 col-sm-12 col-xs-12 marB30">
+								@foreach($posts as $post)
+									<p>POST</p>
+								@endforeach
+							</div>
 
 							<!-- <div class="item">
 									<div class="col-md-4 col-sm-4 col-xs-12 marB30">
