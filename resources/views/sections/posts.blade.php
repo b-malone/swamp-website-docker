@@ -43,6 +43,8 @@
 										{{ $post->date }}
 										<br> 
 										{{ $post->time }}
+										<br><br>
+										{{ $post->body }}
 									</p>
 									<div class="row padT20">
 										<div class="col-md-6 col-sm-12 col-xs-12">
