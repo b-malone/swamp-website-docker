@@ -49,19 +49,7 @@
 									<div class="row padT20">
 										<div class="col-md-6 col-sm-12 col-xs-12">
 											<div class="blog-member-detail">
-
-												<!-- <p>{{ json_encode($post) }}</p> -->
-
-												@if ($post->name == "download")
-													<a class="swamp-btn submit"
-														href="#" href='/storage/content/{{ $post->slug }}'
-														target='_self' download='{{ $post->slug }}'>
-														Download
-													</a>
-												@else
-													<p><a class="null-link" href="#">@&nbsp;{{ $post->slug }}</a></p>
-												@endif
-
+												<p><a class="null-link" href="#">@&nbsp;{{ $post->slug }}</a></p>
 											</div>
 										</div>
 									</div>
