@@ -26,8 +26,8 @@ class PagesController extends Controller
     // dd($posts);
 
     $posts = collect($posts)->map(function($p) {
-      $p->date = Carbon::parse($p->published_date)->format('M D Y');
-      $p->time = Carbon::parse($p->published_date)->format('h:m:s a');
+      $p->date = Carbon::parse($p->published_date)->format('D d M, Y');
+      $p->time = Carbon::parse($p->published_date)->format('h:m a');
       // $p->categpry = Category::find($p->category_id)->get()->name;
       return $p;
     });
