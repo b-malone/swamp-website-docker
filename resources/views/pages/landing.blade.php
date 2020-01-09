@@ -100,8 +100,6 @@
 		<!-- NEWS -->
 		<section class="news padT100 padB70">
 
-
-
 				<div class="bolg-section">
 					<div class="container">
 						<div class="row">

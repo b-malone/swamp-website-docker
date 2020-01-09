@@ -13,9 +13,11 @@ class PagesController extends Controller
 {
 
   public function index() {
+    // only show news posts
     $posts = DB::table('blog_posts')
       ->join('categories', 'categories.id', '=', 'blog_posts.category_id')
       ->where('status', 'PUBLISHED')
+      ->where('categories.slug', '=', 'news')
       ->get();
       // ->simplePaginate(5);
 
