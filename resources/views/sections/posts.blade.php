@@ -30,32 +30,28 @@
 	<div class="container">
 		<div class="row">
 
-			<div class="col-md-6 col-sm-12 col-xs-12 marB30">
+			<div class="marB30">
 				<!-- {!! json_encode($posts) !!}
 				 -->
 				@foreach ($posts as $post)
-					<div class="item">
+					<div class="item col-md-6 col-sm-12 col-xs-12">
 						
-							<div class="blog">
-								<div class="blog-detail">
-									<h4><b>{{ $post->title }}</b></h4>
-									<p>
-										{{ $post->date }}
-										<br> 
-										{{ $post->time }}
-										<br><br>
-										{!! $post->body !!}
-									</p>
-									<div class="row padT20">
-										<div class="col-md-6 col-sm-12 col-xs-12">
-											<div class="blog-member-detail">
-												<p><a class="null-link" href="#">@&nbsp;{{ $post->slug }}</a></p>
-											</div>
+						<div class="blog">
+							<div class="blog-detail">
+								<h4><b>{{ $post->title }}</b></h4>
+								<p>
+									{!! $post->body !!}
+								</p>
+								<!-- <div class="row padT20">
+									<div class="col-md-6 col-sm-12 col-xs-12">
+										<div class="blog-member-detail">
+											<p><a class="null-link" href="#">@&nbsp;{{ $post->slug }}</a></p>
 										</div>
 									</div>
-								</div>
+								</div> -->
 							</div>
-						
+						</div>
+					
 					</div>
 				@endforeach
 			</div>
