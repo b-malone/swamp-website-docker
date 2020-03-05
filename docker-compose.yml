@@ -1,69 +1,71 @@
-version: '3'
+version: '3.4'
 services:
-  #PHP Service
+
   app:
     build:
       context: .
       dockerfile: Dockerfile
-    image: digitalocean.com/php
-    container_name: app
-    restart: unless-stopped
+    # container_name: app
+    # restart: unless-stopped
     tty: true
     environment:
-      DATABASE: forge
       SERVICE_NAME: app
       SERVICE_TAGS: dev
-    working_dir: /var/www
-    command: ./setup.sh
+    working_dir: /var/www/html
     volumes:
-       - ./:/var/www
-       - ./php/local.ini:/usr/local/etc/php/conf.d/local.ini
+      - './:/var/www/html'
+    restart: always
     networks:
-      - app-network
+      - website
 
-  #Nginx Service
-  webserver:
-    image: nginx:alpine
-    container_name: webserver
-    restart: unless-stopped
-    tty: true
+  nginx:
+    image: 'nginx:alpine'
+    # container_name: nginx
+    restart: always
+    #tty: true
     ports:
-      - "80:80"
-      - "443:443"
+      - '80:80'
+      - '443:443'
     volumes:
-      # Application Code
-      - ./:/var/www
-      # Nginx config
-      - ./nginx/conf.d/:/etc/nginx/conf.d/
+      - './:/var/www/html'
+      - './nginx/conf.d/:/etc/nginx/conf.d/'
+      - './nginx/ssl/:/etc/nginx/ssl/'
     networks:
-      - app-network
+      - website
 
-  #MySQL Service
   db:
-    image: mysql:5.7.22
-    container_name: db
-    restart: unless-stopped
+    image: 'mysql:5.7'
+    # container_name: db
+    restart: always
     tty: true
     ports:
-      - "3306:3306"
+      - '3306:3306'
     environment:
-      # TO DO: Swarm Secrets!
       MYSQL_DATABASE: forge
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
       MYSQL_ROOT_PASSWORD: root
-      SERVICE_TAGS: dev
-      SERVICE_NAME: mysql
     volumes:
-      - dbdata:/var/lib/mysql
-      - ./mysql/my.cnf:/etc/mysql/my.cnf
+      - 'db_data:/var/lib/mysql/'
     networks:
-      - app-network
+      - website
 
-#Docker Networks
+    # node:
+    #   image: 'node:10-alpine'
+    #   # container_name: node
+    #   working_dir: /usr/src/app
+    #   volumes:
+    #     - './:/usr/src/app'
+    #     - './:/'
+    #   entrypoint:
+    #     - /docker_node_run.sh
+    #   depends_on:
+    #     - app
+
 networks:
-  app-network:
+  website:
     driver: bridge
 
-#Volumes
 volumes:
-  dbdata:
+  db_data:
     driver: local
